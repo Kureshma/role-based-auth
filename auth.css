@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-container {
+    width: 360px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+.link {
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.password-box {
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.admin-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.moon-glow {
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    animation: glow 2.5s infinite;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 8px rgba(0,0,0,.3); }
+    50% { box-shadow: 0 0 30px rgba(0,0,0,.6); }
+    100% { box-shadow: 0 0 8px rgba(0,0,0,.3); }
+}

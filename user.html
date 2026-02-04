@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>User Dashboard</h1>
+
+    <div class="customer-box">
+        <label>User:</label>
+        <select id="customerSelect"></select>
+    </div>
+
+    <h2>Products</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Stock</th>
+                <th>Price (₹)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="productTable"></tbody>
+    </table>
+
+    <h2>Cart</h2>
+    <div id="cart"></div>
+
+    <p id="total"></p>
+
+    <button onclick="buy()">Buy</button>
+    <p id="message"></p>
+    <a href="user-login.html">← Back</a>
+</div>
+
+<script src="user.js"></script>
+</body>
+</html>
